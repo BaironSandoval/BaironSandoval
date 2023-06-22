@@ -1,4 +1,3 @@
-//Función que oculta o muestra el menu
 function mostrarOcultarMenu() {
   let menu = document.getElementById("nav");
   menu.classList.toggle("responsive");
