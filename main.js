@@ -1,16 +1,12 @@
-let menuVisible = false;
-
-function mostrarOcultarMenu () {
-    if (menuVisible) {
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-    }else {
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
-    }
+//Función que oculta o muestra el menu
+function mostrarOcultarMenu() {
+  let menu = document.getElementById("nav");
+  menu.classList.toggle("responsive");
 }
 
-function seleccionar() {
-    document.getElementById("nav").classList = "";
-    menuVisible = false;
+let botonHamburguesa = document.getElementById("botonHamburguesa");
+botonHamburguesa.addEventListener("click", mostrarOcultarMenu);
+let selectores = document.querySelectorAll("#seleccionar");
+for (var i = 0; i < selectores.length; i++) {
+  selectores[i].addEventListener("click", mostrarOcultarMenu);
 }

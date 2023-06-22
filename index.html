@@ -3,28 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" type="image/svg+xml" href="./public/globe-solid.svg" />
     <title>Bairon Sandoval</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="contenedor-header">
       <header>
         <div class="logo">
-          <a href="#">&lt;Bairon/></a>
+          <a href="#">&lt;Bairon /></a>
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            <li>
+              <a href="#inicio" id="seleccionar" class="inicio1">INICIO</a>
+            </li>
+            <li>
+              <a href="#sobremi" id="seleccionar" class="sobremi2">SOBRE MI</a>
+            </li>
+            <li>
+              <a href="#skills" id="seleccionar" class="skills3">SKILLS</a>
+            </li>
+            <li>
+              <a href="#curriculum" id="seleccionar" class="curriculum4"
+                >CURRICULUM</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" id="seleccionar" class="portfolio5"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li>
+              <a href="#contacto" id="seleccionar" class="contacto6"
+                >CONTACTO</a
+              >
+            </li>
           </ul>
         </nav>
-        <div class="nav-responsive" onclick={mostrarOcultarMenu()}>
+        <div class="nav-responsive" id="botonHamburguesa">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -33,14 +57,20 @@
     <section id="inicio" class="inicio">
       <div class="contenido-banner">
         <div class="contenedor-img">
-          <img src="./public/Bairon.png" alt="mi-foto">
+          <img src="./public/Bairon.png" alt="mi-foto" />
         </div>
         <h1>BAIRON SANDOVAL</h1>
         <h2>FullStack Developer</h2>
         <div class="redes">
-          <a href="https://www.linkedin.com/in/baironsandoval/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/BaironSandoval" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://baironsandoval.netlify.app/"><i class="fa-sharp fa-solid fa-globe"></i></a>
+          <a href="https://www.linkedin.com/in/baironsandoval/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/BaironSandoval" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://baironsandoval.netlify.app/"
+            ><i class="fa-sharp fa-solid fa-globe"></i
+          ></a>
         </div>
       </div>
     </section>
@@ -48,12 +78,24 @@
     <section id="sobremi" class="sobremi">
       <div class="contenido-seccion">
         <h2>Sobre Mí</h2>
-        <p>Hola, soy Bairon Sandoval. <span>Soy Desarrollor Web certificado</span>, a traves de la tecnologia logró entender las necesidades del usuario y dar una efectiva solucion. Mi experiencia está enfocada en el <span>desarrollo Full Stack</span>, manejando tecnologías como <span>Javascript, HTML5, CSS3, React, Github, Node.js y Express</span>. Para mi es fundamental el trabajo en equipo, el constante autoaprendizaje y la diciplina.</p>
-        <a href="https://drive.google.com/file/d/12tZ36Chk6RlYA8s2dL0FrDW8CQYyG4lW/view?usp=drive_link" target="_blank">
+        <p>
+          Hola, soy Bairon Sandoval.
+          <span>Soy Desarrollor Web certificado</span>, a traves de la
+          tecnologia logró entender las necesidades del usuario y dar una
+          efectiva solucion. Mi experiencia está enfocada en el
+          <span>desarrollo Full Stack</span>, manejando tecnologías como
+          <span>Javascript, HTML5, CSS3, React, Github, Node.js y Express</span
+          >. Para mi es fundamental el trabajo en equipo, el constante
+          autoaprendizaje y la diciplina.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/12tZ36Chk6RlYA8s2dL0FrDW8CQYyG4lW/view?usp=drive_link"
+          target="_blank"
+        >
           <button>
             Descargar CV
             <i class="fa-solid fa-download"></i>
-          <span class="overlay"></span>
+            <span class="overlay"></span>
           </button>
         </a>
       </div>
@@ -100,7 +142,7 @@
             </div>
             <div class="interes">
               <i class="fas fa-headphones"></i>
-                <span>MUSICA</span>
+              <span>MUSICA</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-futbol"></i>
@@ -188,13 +230,23 @@
               <h4>Web Full-Stack Developer y Ciencias de Computación</h4>
               <span class="casa">Academlo</span>
               <span class="fecha">2023</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium in expedita voluptatum est aperiam quidem, eaque enim provident, suscipit quae eligendi saepe, exercitationem animi error iusto ipsam autem aliquam.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                laudantium in expedita voluptatum est aperiam quidem, eaque enim
+                provident, suscipit quae eligendi saepe, exercitationem animi
+                error iusto ipsam autem aliquam.
+              </p>
             </div>
             <div class="item izq">
               <h4>Programacion Basica</h4>
               <span class="casa">Platzi</span>
               <span class="fecha">2022</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium in expedita voluptatum est aperiam quidem, eaque enim provident, suscipit quae eligendi saepe, exercitationem animi error iusto ipsam autem aliquam.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                laudantium in expedita voluptatum est aperiam quidem, eaque enim
+                provident, suscipit quae eligendi saepe, exercitationem animi
+                error iusto ipsam autem aliquam.
+              </p>
             </div>
           </div>
 
@@ -204,13 +256,23 @@
               <h4>Tecnico en Software y Hardware</h4>
               <span class="casa">Intelcenter Technology</span>
               <span class="fecha">2021 - 2022</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium in expedita voluptatum est aperiam quidem, eaque enim provident, suscipit quae eligendi saepe, exercitationem animi error iusto ipsam autem aliquam.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                laudantium in expedita voluptatum est aperiam quidem, eaque enim
+                provident, suscipit quae eligendi saepe, exercitationem animi
+                error iusto ipsam autem aliquam.
+              </p>
             </div>
             <div class="item der">
               <h4>Tecnico Telecomunicaciones</h4>
               <span class="casa">Tabasco</span>
               <span class="fecha">2018 - 2021</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium in expedita voluptatum est aperiam quidem, eaque enim provident, suscipit quae eligendi saepe, exercitationem animi error iusto ipsam autem aliquam.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                laudantium in expedita voluptatum est aperiam quidem, eaque enim
+                provident, suscipit quae eligendi saepe, exercitationem animi
+                error iusto ipsam autem aliquam.
+              </p>
             </div>
           </div>
         </div>
@@ -222,7 +284,7 @@
         <h2>PORTFOLIO</h2>
         <div class="galeria">
           <div class="proyecto">
-            <img src="./public/pokedex.jpeg" alt="pokedex">
+            <img src="./public/pokedex.jpeg" alt="pokedex" />
             <div class="overlay">
               <a href="https://pokedex-jcb.netlify.app/" target="_blank">
                 <h3>Pokedex</h3>
@@ -231,7 +293,7 @@
             </div>
           </div>
           <div class="proyecto">
-            <img src="./public/rick_and_morty.jpeg" alt="rick_and_morty">
+            <img src="./public/rick_and_morty.jpeg" alt="rick_and_morty" />
             <div class="overlay">
               <a href="https://rickandmorty-jcb.netlify.app" target="_blank">
                 <h3>Rick and Morty</h3>
@@ -240,7 +302,7 @@
             </div>
           </div>
           <div class="proyecto">
-            <img src="./public/weather_app.jpeg" alt="know_your_weather_app">
+            <img src="./public/weather_app.jpeg" alt="know_your_weather_app" />
             <div class="overlay">
               <a href="https://knowyourwearherapp.netlify.app" target="_blank">
                 <h3>Weather App</h3>
@@ -249,7 +311,7 @@
             </div>
           </div>
           <div class="proyecto">
-            <img src="./public/know_galaxy.jpeg" alt="know_your_galaxy">
+            <img src="./public/know_galaxy.jpeg" alt="know_your_galaxy" />
             <div class="overlay">
               <a href="https://knowyourgalaxy.netlify.app" target="_blank">
                 <h3>know Your Galaxy</h3>
@@ -258,7 +320,7 @@
             </div>
           </div>
           <div class="proyecto">
-            <img src="./public/Shopping_cartone.jpeg" alt="shopping_cartone">
+            <img src="./public/Shopping_cartone.jpeg" alt="shopping_cartone" />
             <div class="overlay">
               <a href="https://shoppingcartone.netlify.app/" target="_blank">
                 <h3>Shopping Cartone</h3>
@@ -267,7 +329,7 @@
             </div>
           </div>
           <div class="proyecto">
-            <img src="./public/crud.jpeg" alt="crud">
+            <img src="./public/crud.jpeg" alt="crud" />
             <div class="overlay">
               <a href="https://users-crud-jcb.netlify.app/" target="_blank">
                 <h3>CRUD</h3>
@@ -283,25 +345,31 @@
       <div class="contenido-seccion">
         <h2>Contacto</h2>
         <div class="redes">
-          <a href="https://www.linkedin.com/in/baironsandoval/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/BaironSandoval" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://baironsandoval.netlify.app/"><i class="fa-sharp fa-solid fa-globe"></i></a>
+          <a href="https://www.linkedin.com/in/baironsandoval/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/BaironSandoval" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://baironsandoval.netlify.app/"
+            ><i class="fa-sharp fa-solid fa-globe"></i
+          ></a>
         </div>
-        
-        <a href="https://drive.google.com/file/d/12tZ36Chk6RlYA8s2dL0FrDW8CQYyG4lW/view?usp=drive_link" target="_blank">
+
+        <a
+          href="https://drive.google.com/file/d/12tZ36Chk6RlYA8s2dL0FrDW8CQYyG4lW/view?usp=drive_link"
+          target="_blank"
+        >
           <button>
             Descargar CV
             <i class="fa-solid fa-download"></i>
-          <span class="overlay"></span>
+            <span class="overlay"></span>
           </button>
         </a>
-        
       </div>
     </section>
 
-    <footer>
-      &copy; 2023 Bairon Sandoval
-    </footer>
+    <footer>&copy; 2023 Bairon Sandoval</footer>
 
     <script type="module" src="./main.js"></script>
   </body>
