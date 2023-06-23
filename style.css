@@ -467,7 +467,7 @@ footer {
     right: 0;
     top: 75px;
     background-color: #000f16;
-    width: 180px;
+    width: 100%;
   }
   nav.responsive ul {
     display: block !important;
