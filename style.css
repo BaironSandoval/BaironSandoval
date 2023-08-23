@@ -73,6 +73,10 @@ html {
   margin: auto;
   text-align: center;
   border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .inicio .contenido-banner img { 
   margin-top: 40px;
@@ -80,7 +84,7 @@ html {
   display: block;
   width: 70%;
   margin: auto;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .inicio .contenido-banner h1 {
@@ -203,20 +207,19 @@ html {
   font-size: 30px;
   margin-bottom: 10px;
 }
-.sobremi button, .contacto button {
+.inicio button, .contacto button {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
   width: fit-content;
   display: block;
-  margin-top: 30px;
   padding: 10px 22px;
   font-size: 16px;
   color: #fff;
   position: relative;
   z-index: 10;
 }
-.sobremi button .overlay, .contacto button .overlay {
+.inicio button .overlay, .contacto button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -226,7 +229,7 @@ html {
   z-index: -1;
   transition: 1s;
 }
-.sobremi button:hover .overlay, .contacto button:hover .overlay {
+.inicio button:hover .overlay, .contacto button:hover .overlay {
   width: 100%;
 }
 .skills {
