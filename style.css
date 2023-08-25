@@ -276,10 +276,10 @@ html {
   margin-bottom: 10px;
   text-align: center;
 }
-.skills .skill > span i {
-  background-color: #008ac9;
-  width: 30px;
-  height: 30px;
+.skills .skill > span img {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
