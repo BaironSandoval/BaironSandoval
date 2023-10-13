@@ -276,14 +276,12 @@ html {
   margin-bottom: 10px;
   text-align: center;
 }
-.skills .skill > span img {
+.skills .skill > span i {
   background-color: transparent;
-  width: 60px;
-  height: 60px;
+  font-size: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
 }
 .curriculum {
   background-color: #000f16;
