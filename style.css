@@ -211,6 +211,7 @@ html {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
+  border-radius: 5px;
   width: fit-content;
   display: block;
   padding: 10px 22px;
@@ -226,11 +227,15 @@ html {
   width: 0;
   height: 100%;
   background-color: #008ac9;
+  border-radius: 4px;
   z-index: -1;
   transition: 1s;
 }
 .inicio button:hover .overlay, .contacto button:hover .overlay {
   width: 100%;
+}
+.inicio .contenido-banner h2 {
+  font-size: 20px;
 }
 .skills {
   background-color: #000f16fc;
