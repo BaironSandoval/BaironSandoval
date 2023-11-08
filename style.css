@@ -113,6 +113,7 @@ html {
   background-color: #008ac9;
 }
 .sobremi {
+  height: 100vh;
   background-color: #000f16;
   color: #fff;
   padding: 50px 20px;
@@ -143,70 +144,6 @@ html {
 .sobremi .contenido-seccion p span {
   color: #008ac9;
 }
-.sobremi .fila {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.sobremi .fila .col {
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.sobremi .fila .col h3 {
-  font-size: 28px;
-  font-family: 'Righteous';
-  font-weight: normal;
-  margin-bottom: 25px;
-}
-.sobremi .fila .col ul {
-  list-style: none;
-}
-.sobremi .fila .col ul li {
-  margin: 12px 0;
-}
-.sobremi .fila .col ul li strong {
-  display: inline-block;
-  color: #008ac9;
-  width: 130px;
-}
-.sobremi .fila .col ul li span {
-  background-color: #008ac9;
-  padding: 3px;
-  border-radius: 5px;
-}
-.sobremi .fila .col .contenedor-intereses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.sobremi .fila .col .contenedor-intereses .interes {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(16 16 16 / 65%);
-  border-radius: 10px;
-  margin: 0 15px 15px 0;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: .3s;
-  text-align: center;
-  font-size: 10px;
-}
-.sobremi .fila .col .contenedor-intereses .interes:hover {
-  background-color: #008ac9;
-}
-.sobremi .fila .col .contenedor-intereses .interes i {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
 .inicio button, .contacto button {
   cursor: pointer;
   background-color: transparent;
@@ -234,13 +171,11 @@ html {
 .inicio button:hover .overlay, .contacto button:hover .overlay {
   width: 100%;
 }
-.inicio .contenido-banner h2 {
-  font-size: 20px;
-}
 .skills {
   background-color: #000f16fc;
   color: #fff;
   padding: 50px 20px;
+  height: 100vh;
 }
 .skills .contenido-seccion {
   max-width: 1100px;
@@ -258,10 +193,10 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .skills .fila .col {
-  width: 500px;
-  padding: 0 20px;
+  max-width: 350px;
 }
 .skills .fila .col h3  {
   font-size: 28px;
@@ -287,6 +222,52 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* Scroll infinito */
+
+.contenedor--planetas {
+  max-width: 350px;
+}
+.lista--planetas{
+  width: 100%;
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+}
+.lista--planetas::-webkit-scrollbar{
+  width: 0;
+}
+.lista--planetas li{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.lista--planetas li:hover{
+  background-color: rgb(248,194,0);
+  cursor: pointer;
+}
+.lista--planetas li img{
+  width: 100px;
+}
+.lista--planetas p{
+  color: #f1f1f1;
+  font-weight: bold;
+}
+.lista--planetas li{
+  animation: scrollInfinito 30s linear infinite;
+}
+@keyframes scrollInfinito{
+  0%{
+      transform: translateX(0%);
+  }
+  100%{
+      transform: translateX(calc(-210px * 6));
+  }
 }
 .curriculum {
   background-color: #000f16;
