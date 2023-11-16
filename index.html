@@ -65,8 +65,10 @@
         <div class="contenedor-img">
           <img src="./public/foto-portafolio.png" alt="mi-foto" />
         </div>
-        <h1>BAIRON SANDOVAL</h1>
-        <h2>Software Developer</h2>
+        <div>
+          <h1>BAIRON SANDOVAL</h1>       
+          <h2>Software Developer</h2>        
+        </div>        
         <div class="redes">
           <a href="https://www.linkedin.com/in/baironsandoval/" target="_blank"
             ><i class="fa-brands fa-linkedin"></i
@@ -97,7 +99,10 @@
     <!--   sobreMi -->
     <section id="sobremi" class="sobremi">
       <div class="contenido-seccion">
-        <h2>Sobre Mí</h2>
+        <div class="container-h2">
+          <h2>Sobre Mí</h2>
+        </div>
+       
         <p>
           Soy<span> Software Developer</span>, apasionado por la tecnología y su
           evolución. Tengo la habilidad de comprender las necesidades del
@@ -115,7 +120,10 @@
     <!-- SKILLS -->
     <section id="skills" class="skills">
       <div class="contenido-seccion">
-        <h2>Skills</h2>
+        <div class="container-h2">
+          <h2>Skills</h2>
+        </div>
+        
         <div class="fila">
           <div class="col">
             <h3>Technical Skills</h3> 
@@ -124,7 +132,7 @@
                   <li>
                       <picture>
                           <img width="100" height="100" src="./public/js.png" alt="js">
- class="img-logo"                      </picture>
+                      </picture>
                   </li>
                   <li>
                       <picture>
@@ -179,7 +187,7 @@
                 <li>
                   <picture>
                       <img width="100" height="100" src="./public/js.png" alt="js">
- class="img-logo"                  </picture>
+                  </picture>
               </li>
               <li>
                   <picture>
@@ -260,142 +268,238 @@
     <!-- PROYECTOS -->
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
-        <h2>PROYECTOS</h2>
-        <div class="galeria">
-          <div class="proyecto">
-            <img src="./public/pokedex.jpeg" alt="pokedex" />
-            <div class="overlay">
-              <a href="https://pokedex-jcb.netlify.app/" target="_blank">
-                <h3>Pokedex</h3>
-                <p>React</p>
-              </a>
+        <div class="container-h2">
+          <h2>PROYECTOS</h2>
+        </div>
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+    
+                  <div class="swiper-slide">
+                    <a href="https://know-your-galaxy.vercel.app/" target="_blank">
+                      <div class="product-content">
+                        <div class="product-txt">                          
+                            <h3>Your Galaxy</h3>
+                            <p>React</p>
+                        </div>
+                        <div class="product-img">
+                          <img src="./public/know_galaxy.jpeg" alt="pokedex">
+                        </div>
+                      </div>
+                    </a>                                                                       
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <a href="https://pokedex-jcb.netlify.app/" target="_blank">
+                      <div class="product-content">
+                        <div class="product-txt">                          
+                            <h3>Pokedex</h3>
+                            <p>React</p>
+                        </div>
+                        <div class="product-img">
+                          <img src="./public/pokedex.jpeg" alt="pokedex">
+                        </div>
+                      </div>
+                    </a>                                                          
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <a href="https://rickandmorty-jcb.netlify.app" target="_blank">
+                      <div class="product-content">
+                        <div class="product-txt">
+                            <h3>Rick and Morty</h3>
+                            <p>React</p>
+                        </div>
+                        <div class="product-img">
+                          <img src="./public/rick_and_morty.jpeg" alt="pokedex">
+                        </div>
+                      </div>
+                    </a>                                        
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <a href="https://knowyourwearherapp.netlify.app" target="_blank">
+                      <div class="product-content">
+                        <div class="product-txt">                          
+                            <h3>Weather App</h3>
+                            <p>React</p>
+                        </div>
+                        <div class="product-img">
+                          <img src="./public/weather_app.jpeg" alt="pokedex">
+                        </div>
+                      </div>
+                    </a>                                                            
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <a href="https://users-crud-mu.vercel.app/" target="_blank">
+                      <div class="product-content">
+                        <div class="product-txt">                          
+                            <h3>CRUD</h3>
+                            <p>React</p>
+                        </div>
+                        <div class="product-img">
+                          <img src="./public/crud.jpeg" alt="pokedex">
+                        </div>
+                      </div>
+                    </a>                                       
+                  </div>
+
+                  <div class="swiper-slide">                
+                    <a href="https://your-store01.netlify.app/" target="_blank">
+                      <div class="product-content">
+                        <div class="product-txt">
+                            <h3>Your Store</h3>
+                            <p>Javascript</p>
+                          </div>
+                          <div class="product-img">
+                            <img src="./public/Shopping_cartone.jpeg" alt="pokedex">
+                          </div>
+                        </div>                 
+                      </a>
+                  </div>
+
             </div>
-          </div>
-          <div class="proyecto">
-            <img src="./public/rick_and_morty.jpeg" alt="rick_and_morty" />
-            <div class="overlay">
-              <a href="https://rickandmorty-jcb.netlify.app" target="_blank">
-                <h3>Rick and Morty</h3>
-                <p>React</p>
-              </a>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="./public/weather_app.jpeg" alt="know_your_weather_app" />
-            <div class="overlay">
-              <a href="https://knowyourwearherapp.netlify.app" target="_blank">
-                <h3>Weather App</h3>
-                <p>React</p>
-              </a>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="./public/know_galaxy.jpeg" alt="know_your_galaxy" />
-            <div class="overlay">
-              <a href="https://knowyourgalaxy.netlify.app" target="_blank">
-                <h3>know Your Galaxy</h3>
-                <p>React</p>
-              </a>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="./public/Shopping_cartone.jpeg" alt="shopping_cartone" />
-            <div class="overlay">
-              <a href="https://your-store01.netlify.app/" target="_blank">
-                <h3>Your Store</h3>
-                <p>Javascript</p>
-              </a>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="./public/crud.jpeg" alt="crud" />
-            <div class="overlay">
-              <a href="https://users-crud-jcb.netlify.app/" target="_blank">
-                <h3>CRUD</h3>
-                <p>React</p>
-              </a>
-            </div>
-          </div>
+        </section>
         </div>
       </div>
     </section>
     <!-- CURRICULUM -->
     <section id="curriculum" class="curriculum">
       <div class="contenido-seccion">
-        <h2>Curriculum</h2>
-        <div class="fila">
-          <div class="col izquierda">
-            <h3>Educacíon</h3>
-            <div class="item izq">
-              <h4>Web Full-Stack Developer y Ciencias de Computación</h4>
-              <span class="casa">Academlo</span>
-              <span class="fecha">Febrero 2023</span>
-              <p>
-                Implementé tecnologías clave como JavaScript, HTML5, CSS3,
-                React, Redux, Node.js, PostgreSQL y Next.js en proyectos de
-                desarrollo. Utilicé herramientas de diseño para crear interfaces
-                atractivas. Simulé un ambiente laboral ágil con la metodología
-                SCRUM, mejorando la gestión de proyectos. Desarrollé habilidades
-                de trabajo en equipo y productividad, facilitando la
-                colaboración efectiva.
-              </p>
-            </div>
-            <div class="item izq">
-              <h4>Programacion Basica</h4>
-              <span class="casa">Platzi</span>
-              <span class="fecha">Agosto 2022</span>
-              <p>
-                Adquirí sólidas bases en desarrollo de software, dominando
-                tecnologías clave como JavaScript, HTML5 y CSS3 desde los
-                fundamentos hasta un nivel técnico avanzado. Amplié mis
-                conocimientos en programación y diseño web, permitiéndome crear
-                soluciones eficientes y atractivas. Desarrollé habilidades para
-                construir aplicaciones web dinámicas y responsivas. Mi capacidad
-                de resolver problemas y enfrentar desafíos técnicos se
-                fortaleció, brindándome confianza en mi capacidad de abordar
-                proyectos complejos.
-              </p>
-            </div>
-          </div>
-
-          <div class="col derecha">
-            <h3>Experiencia de Trabajo</h3>
-            <div class="item der">
-              <h4>Técnico en Software y Hardware</h4>
-              <span class="casa">Intelcenter Technology</span>
-              <span class="fecha">Junio 2021 - Agosto 2022</span>
-              <p>
-                Como técnico de computadoras e impresoras, logré diagnosticar y
-                reparar eficientemente diversos problemas de hardware y
-                software, brindando un excelente servicio al cliente. Adquirí
-                conocimientos en sistemas operativos y manejo de diferentes
-                marcas y modelos. Me enfrenté a desafíos que me ayudaron a
-                crecer personal y profesionalmente, desarrollando habilidades de
-                adaptabilidad y gestión del tiempo.
-              </p>
-            </div>
-            <div class="item der">
-              <h4>Técnico Telecomunicaciones</h4>
-              <span class="casa">Tabasco</span>
-              <span class="fecha">Noviembre 2019 - Junio 2021</span>
-              <p>
-                Como técnico en telecomunicaciones, realicé tareas de
-                instalación, configuración y mantenimiento de equipos y redes.
-                Logré resolver eficientemente problemas técnicos, mejorando la
-                conectividad y la comunicación. Aprendí sobre redes, protocolos
-                y sistemas de comunicación, desarrollando habilidades analíticas
-                y de resolución de problemas. Me enfrenté a desafíos que
-                fortalecieron mi capacidad de trabajar en entornos dinámicos.
-              </p>
-            </div>
-          </div>
+        <div class="container-h2">
+          <h2>Curriculum</h2> 
         </div>
+        
+        <div class="carrousel">
+          <div class="conteCarrousel">
+              <div class="itemCarrousel" id="itemCarrousel-1">
+                  <div class="itemCarrouselTarjeta">
+                    <h3>Educacíon</h3>
+                    <div class="item izq">
+                      <h4>Web Full-Stack Developer y Ciencias de Computación</h4>
+                      <span class="casa">Academlo</span>
+                      <span class="fecha">Febrero 2023</span>
+                      <p>
+                        Implementé tecnologías clave como JavaScript, HTML5, CSS3,
+                        React, Redux, Node.js, PostgreSQL y Next.js en proyectos de
+                        desarrollo. Utilicé herramientas de diseño para crear interfaces
+                        atractivas. Simulé un ambiente laboral ágil con la metodología
+                        SCRUM, mejorando la gestión de proyectos. Desarrollé habilidades
+                        de trabajo en equipo y productividad, facilitando la
+                        colaboración efectiva.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="itemCarrouselArrows">
+                      <a href="#itemCarrousel-4">
+                          <i class="fas fa-chevron-left"></i>
+                      </a>
+                      <a href="#itemCarrousel-2">
+                          <i class="fas fa-chevron-right"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="itemCarrousel" id="itemCarrousel-2">
+                  <div class="itemCarrouselTarjeta">
+                    <h3>Educacíon</h3>
+                    <div class="item izq">
+                      <h4>Programacion Basica</h4>
+                      <span class="casa">Platzi</span>
+                      <span class="fecha">Agosto 2022</span>
+                      <p>
+                        Adquirí sólidas bases en desarrollo de software, dominando
+                        tecnologías clave como JavaScript, HTML5 y CSS3 desde los
+                        fundamentos hasta un nivel técnico avanzado. Amplié mis
+                        conocimientos en programación y diseño web, permitiéndome crear
+                        soluciones eficientes y atractivas. Desarrollé habilidades para
+                        construir aplicaciones web dinámicas y responsivas. Mi capacidad
+                        de resolver problemas y enfrentar desafíos técnicos se
+                        fortaleció, brindándome confianza en mi capacidad de abordar
+                        proyectos complejos.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="itemCarrouselArrows">
+                      <a href="#itemCarrousel-1">
+                          <i class="fas fa-chevron-left"></i>
+                      </a>
+                      <a href="#itemCarrousel-3">
+                          <i class="fas fa-chevron-right"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="itemCarrousel" id="itemCarrousel-3">
+                  <div class="itemCarrouselTarjeta">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                      <h4>Técnico en Software y Hardware</h4>
+                      <span class="casa">Intelcenter Technology</span>
+                      <span class="fecha">Junio 2021 - Agosto 2022</span>
+                      <p>
+                        Como técnico de computadoras e impresoras, logré diagnosticar y
+                        reparar eficientemente diversos problemas de hardware y
+                        software, brindando un excelente servicio al cliente. Adquirí
+                        conocimientos en sistemas operativos y manejo de diferentes
+                        marcas y modelos. Me enfrenté a desafíos que me ayudaron a
+                        crecer personal y profesionalmente, desarrollando habilidades de
+                        adaptabilidad y gestión del tiempo.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="itemCarrouselArrows">
+                      <a href="#itemCarrousel-2">
+                          <i class="fas fa-chevron-left"></i>
+                      </a>
+                      <a href="#itemCarrousel-4">
+                          <i class="fas fa-chevron-right"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="itemCarrousel" id="itemCarrousel-4">
+                <div class="itemCarrouselTarjeta">
+                  <h3>Experiencia de Trabajo</h3>
+                  <div class="item der">
+                    <h4>Técnico Telecomunicaciones</h4>
+                    <span class="casa">Tabasco</span>
+                    <span class="fecha">Noviembre 2019 - Junio 2021</span>
+                    <p>
+                      Como técnico en telecomunicaciones, realicé tareas de
+                      instalación, configuración y mantenimiento de equipos y redes.
+                      Logré resolver eficientemente problemas técnicos, mejorando la
+                      conectividad y la comunicación. Aprendí sobre redes, protocolos
+                      y sistemas de comunicación, desarrollando habilidades analíticas
+                      y de resolución de problemas. Me enfrenté a desafíos que
+                      fortalecieron mi capacidad de trabajar en entornos dinámicos.
+                    </p>
+                  </div>
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+              <a href="#itemCarrousel-3">•</a>
+              <a href="#itemCarrousel-4">•</a>
+          </div>
+      </div>
+
       </div>
     </section>
     <!-- Contacto -->
-    <section id="contacto" class="contacto">
+    <!-- <section id="contacto" class="contacto">
       <div class="contenido-seccion">
-        <h2>Contacto</h2>
+        <div class="container-h2">
+          <h2>Contacto</h2>
+        </div>
+
         <div class="redes">
           <a href="https://www.linkedin.com/in/baironsandoval/" target="_blank"
             ><i class="fa-brands fa-linkedin"></i
@@ -416,133 +520,72 @@
           </button>
         </a>
       </div>
-    </section>
+    </section> -->
+
+    <section id="contact" class="contact">
+      <div class="content-section">
+        <h2>Contacto</h2>
+        <div class="row">
+          <!-- Form -->
+          <form
+            id="form"
+            class="column"
+            action="https://formsubmit.co/baironalfonsosandovalnino@gmail.com"
+            method="POST"
+          >
+            <label for="name"></label>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Tu nombre completo"
+              required
+            />
+            <label for="phone"></label>
+            <input
+              name="phone"
+              id="phone"
+              type="text"
+              placeholder="teléfono"
+              required
+            />
+            <label for="email"></label>
+            <input
+              name="email"
+              id="email"
+              type="text"
+              placeholder="Dirección de correo"
+              required
+            />
+            <label for="message"></label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://baironsandoval.netlify.app/"
+            />
+
+            <input
+              type="hidden"
+              name="_blacklist"
+              value="spammy pattern, banned term, phrase"
+            />
+            <button type="submit">
+              Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </form>
 
     <footer>&copy; 2023 Bairon Sandoval</footer>
-    <!-- <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                  <div class="icons">
-                      <i class="fa-solid fa-circle-arrow-left"></i>
-                      <img src="public/js.png" alt="logo" class="img-logo">
-                      <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product-content">
-                    <div class="product-txt">
-                        <span>$95</span>
-                        <h3>Jack sigle</h3>
-                        <p>Lorem milique porro!
-                        </p>
-                    </div>
-                    <div class="product-img">
-                      <img src="./public/Shopping_cartone.jpeg" alt="pokedex">
-                    </div>
-                  </div>
-                  <a href="#" class="btn-1">Comprar</a>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="icons">
-                    <i class="fa-solid fa-circle-arrow-left"></i>
-                    <img src="public/js.png" alt="logo" class="img-logo">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-content">
-                  <div class="product-txt">
-                      <span>$95</span>
-                      <h3>Jack sigle</h3>
-                      <p>Lorem milique porro!
-                      </p>
-                  </div>
-                  <div class="product-img">
-                    <img src="./public/know_galaxy.jpeg" alt="pokedex">
-                  </div>
-                </div>
-                <a href="#" class="btn-1">Comprar</a>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="icons">
-                    <i class="fa-solid fa-circle-arrow-left"></i>
-                    <img src="public/js.png" alt="logo" class="img-logo">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-content">
-                  <div class="product-txt">
-                      <span>$95</span>
-                      <h3>Jack sigle</h3>
-                      <p>Lorem milique porro!
-                      </p>
-                  </div>
-                  <div class="product-img">
-                    <img src="./public/pokedex.jpeg" alt="pokedex">
-                  </div>
-                </div>
-                <a href="#" class="btn-1">Comprar</a>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="icons">
-                    <i class="fa-solid fa-circle-arrow-left"></i>
-                    <img src="public/js.png" alt="logo" class="img-logo">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-content">
-                  <div class="product-txt">
-                      <span>$95</span>
-                      <h3>Jack sigle</h3>
-                      <p>Lorem milique porro!
-                      </p>
-                  </div>
-                  <div class="product-img">
-                    <img src="./public/rick_and_morty.jpeg" alt="pokedex">
-                  </div>
-                </div>
-                <a href="#" class="btn-1">Comprar</a>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="icons">
-                    <i class="fa-solid fa-circle-arrow-left"></i>
-                    <img src="public/js.png" alt="logo" class="img-logo">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-content">
-                  <div class="product-txt">
-                      <span>$95</span>
-                      <h3>Jack sigle</h3>
-                      <p>Lorem milique porro!
-                      </p>
-                  </div>
-                  <div class="product-img">
-                    <img src="./public/weather_app.jpeg" alt="pokedex">
-                  </div>
-                </div>
-                <a href="#" class="btn-1">Comprar</a>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="icons">
-                    <i class="fa-solid fa-circle-arrow-left"></i>
-                    <img src="public/js.png" alt="logo" class="img-logo">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-content">
-                  <div class="product-txt">
-                      <span>$95</span>
-                      <h3>Jack sigle</h3>
-                      <p>Lorem milique porro!
-                      </p>
-                  </div>
-                  <div class="product-img">
-                    <img src="./public/crud.jpeg" alt="pokedex">
-                  </div>
-                </div>
-                <a href="#" class="btn-1">Comprar</a>
-              </div>
-        </div>
-    </div> -->
 
     <script type="module" src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
